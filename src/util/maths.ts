@@ -11,7 +11,6 @@ const operations = ["add", "subtract"];
 
 export const randomOperation = () => {
   const l = getRandomInt(0, operations.length);
-  console.log(l);
   return operations[l];
 };
 

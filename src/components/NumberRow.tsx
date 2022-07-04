@@ -1,11 +1,11 @@
 import React from "react";
 
 export type NumberRowProps = {
-  num: number;
+  num: number | null;
 };
 
 export const NumberRow = ({ num }: NumberRowProps) => {
-  const numString = num.toString();
+  const numString = num ? num.toString() : "";
 
   const generateRowMarkup = (str: string) => {
     const m = [];

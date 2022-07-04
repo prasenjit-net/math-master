@@ -9,8 +9,12 @@ export const MathBody = () => {
   const { math } = mathContext;
   return (
     <div>
-      {math.type === "add" && <Addition inputs={math.inputs} />}
-      {math.type === "subtract" && <Subtraction inputs={math.inputs} />}
+      {math.type === "add" && (
+        <Addition inputs={math.inputs} result={math.result} />
+      )}
+      {math.type === "subtract" && (
+        <Subtraction inputs={math.inputs} result={math.result} />
+      )}
     </div>
   );
 };
