@@ -31,7 +31,7 @@ function App() {
         <div className="font-mono">
             <form className="p-2 m-8 print:hidden">
                 <div>
-                    <label className="p-1">Number of problem: {count}</label>
+                    <label className="p-1"> Number of problem: {count}</label>
                     <input type="button"
                            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                            value="+" onClick={() => setCount(count + 1)}/>
