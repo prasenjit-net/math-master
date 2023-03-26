@@ -44,7 +44,7 @@ const MathGenerationConfig: React.FC<MathGenerationConfigProps> = ({ onSubmit })
     };
 
     return (
-        <form onSubmit={handleSubmit} className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+        <form onSubmit={handleSubmit} className="print:hidden flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
             <div className="flex-grow">
                 <label htmlFor="count" className="block text-sm font-medium text-gray-700">
                     Count:
