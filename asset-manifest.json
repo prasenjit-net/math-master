@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/math-master/static/css/main.27fc67c2.css",
-    "main.js": "/math-master/static/js/main.eb1c7abb.js",
+    "main.js": "/math-master/static/js/main.099cf716.js",
     "static/js/787.b9fc5181.chunk.js": "/math-master/static/js/787.b9fc5181.chunk.js",
     "index.html": "/math-master/index.html",
     "main.27fc67c2.css.map": "/math-master/static/css/main.27fc67c2.css.map",
-    "main.eb1c7abb.js.map": "/math-master/static/js/main.eb1c7abb.js.map",
+    "main.099cf716.js.map": "/math-master/static/js/main.099cf716.js.map",
     "787.b9fc5181.chunk.js.map": "/math-master/static/js/787.b9fc5181.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.27fc67c2.css",
-    "static/js/main.eb1c7abb.js"
+    "static/js/main.099cf716.js"
   ]
 }
