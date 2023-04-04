@@ -1,6 +1,6 @@
 import React, {ChangeEvent, FormEvent, useState} from 'react';
 import {Complexity} from "./utils/math";
-import {Button, ButtonGroup, Container, Form, Row} from "react-bootstrap";
+import {Button, ButtonGroup, Form, Row} from "react-bootstrap";
 
 export interface MathGenerationConfigProps {
     onSubmit: (formData: MathConfig) => void;
