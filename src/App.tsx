@@ -3,6 +3,7 @@ import './App.css';
 import MathView from "./MathView";
 import FormComponent, {MathConfig} from "./MathGenerationConfig";
 import {generateMathProblem, MathProblem} from "./utils/math";
+import {Container, Row, Stack} from "react-bootstrap";
 
 function App() {
     const [maths, setMaths] = useState<MathProblem[]>([]);
@@ -18,12 +19,12 @@ function App() {
         setMaths(ms);
     };
     return (
-        <div className="font-mono">
+        <Container>
             <FormComponent onSubmit={formSubmit}/>
-            <div className="flex flex-row flex-wrap border-2 border-gray-500 m-6 text-3xl">
+            <div className="letter-spacing-1 d-flex flex-row font-monospace lh-base fs-2 vh-100 align-items-baseline flex-wrap">
                 {maths.map((m, i) => (<MathView math={m} key={i}/>))}
             </div>
-        </div>
+        </Container>
     );
 }
 

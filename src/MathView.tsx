@@ -1,5 +1,6 @@
 import React from "react";
 import {MathProblem} from "./utils/math";
+import {Col, Container, Row} from "react-bootstrap";
 
 export type ProblemProp = {
     math: MathProblem
@@ -7,17 +8,14 @@ export type ProblemProp = {
 
 function MathView({math}: ProblemProp) {
     return (
-        <div className="p-4 m-4 flex flex-col">
-            <div className="flex flex-row">
-                <div className="flex flex-col-reverse">
-                    <div className="p-2">{math.operator}</div>
-                </div>
-                <div className="flex flex-col">
-                    {math.operands.map((t, index) => <div key={index} className="p-2 text-right">{t}</div>)}
-                </div>
-            </div>
-            <div className="border-2 border-black"></div>
-            <div>&nbsp;</div>
+        <div className="d-flex flex-column flex-fill align-items-end m-2 p-2">
+            {math.operands.map((t, index) =>
+                <div key={index} className="d-flex flex-row px-3">
+                    <div className="flex-shrink-1">{(index === (math.operands.length - 1)) ? math.operator : ""}</div>
+                    <div className="flex-grow-1">{t}</div>
+                </div>)
+            }
+            <div className="border border-2 border-dark w-100"/>
         </div>
     )
 }
