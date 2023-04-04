@@ -1,6 +1,6 @@
 import React, {ChangeEvent, FormEvent, useState} from 'react';
 import {Complexity} from "./utils/math";
-import {Button, ButtonGroup, Container, Form} from "react-bootstrap";
+import {Button, ButtonGroup, Container, Form, Row} from "react-bootstrap";
 
 export interface MathGenerationConfigProps {
     onSubmit: (formData: MathConfig) => void;
@@ -39,8 +39,8 @@ const MathGenerationConfig: React.FC<MathGenerationConfigProps> = ({onSubmit}) =
     };
 
     return (
-        <Container className="no-print">
-            <Form onSubmit={handleSubmit}>
+        <Row className="no-print">
+            <Form onSubmit={handleSubmit} className="col-md-6">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Math Count</Form.Label>
                     <Form.Control type="number" name="count" placeholder="Count" value={formData.count}
@@ -69,7 +69,7 @@ const MathGenerationConfig: React.FC<MathGenerationConfigProps> = ({onSubmit}) =
                     </Button>
                 </ButtonGroup>
             </Form>
-        </Container>
+        </Row>
     );
 };
 
