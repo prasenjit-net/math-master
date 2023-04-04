@@ -1,6 +1,5 @@
 import React from "react";
 import {MathProblem} from "./utils/math";
-import {Col, Container, Row} from "react-bootstrap";
 
 export type ProblemProp = {
     math: MathProblem
